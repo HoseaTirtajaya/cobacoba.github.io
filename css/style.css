@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Roboto";
+  transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+body {
+  font-size: 14px;
+  color: black;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.landingpage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar {
+  position: fixed;
+  padding: 16px 8px 0px 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(192, 174, 174, 0.726);
+  z-index: 999;
+  align-items: center;
+}
+
+.navbar li a {
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 1.5em;
+  margin-right: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar li:first-child a {
+  margin-right: 40px;
+}
+
+.navbar img {
+  margin: 0;
+  height: 96px;
+  width: 112px;
+}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0px;
+  align-items: center;
+}
+
+.slider-inner {
+  width: 100vw;
+  height: 100vh;
+  position: flex;
+  overflow: hidden;
+  /* border: #666 solid 1px; */
+}
+
+.slider-inner img {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.slider-inner img.active {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  z-index: 100;
+}
+
+.next {
+  right: 0;
+  z-index: 100;
+}
+.slider-outer h1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  color: rgb(51, 170, 170);
+  z-index: 10;
+}
+.slider-outer p {
+  position: absolute;
+  top: 60%;
+  right: 50%;
+  color: rgb(51, 170, 170);
+  z-index: 10;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.lorepage {
+  background-image: url("/assets/backlore.jpg");
+  filter: blur(50%);
+  filter: opacity(75%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: aliceblue;
+}
+
+/* Galleries page  */
+.galleriespage {
+  background-color: antiquewhite;
+}
