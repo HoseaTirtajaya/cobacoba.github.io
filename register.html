@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- Personal CSS styling -->
+    <link rel="stylesheet" href="./css/register.css" />
+    <!-- Personal Font Selection -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hamburger">
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./lore.html">Lore</a></li>
+      <li><a href="./galleries.html">Galleries</a></li>
+      <li>
+        <a href="./index.html"
+          ><img src="./assets/Logo_Project.png" alt="Xtream Chaser"
+        /></a>
+      </li>
+      <li><a href="./characters.html">Characters</a></li>
+      <li><a href="./register.html">Register</a></li>
+    </nav>
+      <div class="register">
+        <h1>Register Form</h1>
+        <form action="#">
+            <label for="Username">Username: 
+                <input type="text" name="Username" id="Username" placeholder="Your username..." autocomplete="off">
+            </label>
+            <label for="Email">Email:
+                <input type="text" name="Email" id="Email" placeholder="Your email..." autocomplete="off">
+            </label>
+            <label for="Password">Password:
+                <input type="password" name="Password" id="Password" placeholder="Your Password..." autocomplete="off">
+            </label>
+            <div class="checkbox">
+                <p>Gender: </p>
+                <input type="radio" name="gender" value="male" checked="true"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <label for="dob">Date of Birth: 
+                <input type="date" name="dob" id="dob">
+            </label>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <input type="submit" value="Submit!" id="submit">
+        </form>
+      </div>
+      <!-- Jquery library -->
+      <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Personal JavaScript -->
+      <script src="./js/register.js"></script>
+    </nav>
+  </body>
+</html>

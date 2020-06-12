@@ -1,5 +1,3 @@
-//Variable Declaration.
-
 //Jquery image slider
 function imgSlider() {
   $(document).ready(() => {
