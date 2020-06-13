@@ -139,3 +139,27 @@
 .lorepage p {
   font-size: 1.2em;
 }
+
+/* Responsive screen css  */
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    width: 24px;
+    height: 24px;
+    margin: 8px 8px 0 0;
+  }
+  .navbar a {
+    margin-right: 10px;
+  }
+  .navbar li {
+    font-size: 0.7em;
+  }
+  .lorepage p {
+    font-size: 0.8em;
+    margin-bottom: 16px;
+  }
+  .lorepage h1,
+  .lorepage h3 {
+    margin-top: 0px;
+    font-size: 0.8em;
+  }
+}

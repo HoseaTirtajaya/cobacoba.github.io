@@ -191,3 +191,18 @@ section {
   font-variant: small-caps;
   font-size: 1.5em;
 }
+
+/* Responsive Screen css */
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    width: 24px;
+    height: 24px;
+    margin: 8px 8px 0 0;
+  }
+  .navbar a {
+    margin-right: 10px;
+  }
+  .navbar li {
+    font-size: 0.7em;
+  }
+}
