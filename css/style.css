@@ -198,8 +198,8 @@ section {
   z-index: 999;
   margin-bottom: 8px;
   bottom: 0;
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100vw;
+  height: 15vh;
 }
 
 /* Responsive screen css  */

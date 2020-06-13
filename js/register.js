@@ -3,6 +3,7 @@ const username = document.getElementById("Username");
 const email = document.getElementById("Email");
 const password = document.getElementById("Password");
 const dob = document.getElementById("dob");
+const nation = document.getElementById("Nation");
 const submitButton = document.getElementById("submit");
 
 //hamburgerHandler
@@ -27,6 +28,8 @@ function submitValidate() {
       alert("Please enter your Date of Birth");
     } else if (password.value == "") {
       alert("Please enter your password");
+    } else if (nation.value == "") {
+      alert("Please enter your nationality");
     } else if (password.value.length < 8) {
       alert("Password cannot less than 8 characters.");
       document.reload();
